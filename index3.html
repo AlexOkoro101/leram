@@ -1,11 +1,12 @@
-<!--Alex's Lerem Project-->
+<!--Alex's Project-->
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
     <meta name="Author" content="Alex Okoro">
-    <title>Concierge</title>
+    <title>Lerambouillet Demo</title>
     <link rel="shortcut icon" href="img/favicon.html">
 
     <!-- GOOGLE FONTS-->
@@ -25,7 +26,7 @@
     <![endif]-->
 
   </head>
-  <body>
+  <body class="enable-fixed-header">
 
     <!-- Start Header -->
     <header id="header" class="classic">
@@ -37,10 +38,19 @@
       <div id="banner">
         <div class="ban">
           <div class="banner-bg-item active">
-            <video autoplay muted loop width="100%" height="auto">
+            <video autoplay muted loop width="100%" height="auto" id="myvideo">
               <source src="vid/file.mp4" type="video/mp4">
               Your browser does not support the video tag
             </video>
+            <div class="content">
+              <h1>The World is a Gift to be Delivered</h1>
+              <p>Le Rambouillet is your premier luxury concierge, designed to help you savor the escape you envision.</p><br>
+              <div>
+                <span class="submit-btn">
+                  <a href="contact1.html" class="btn light">Take me away</a>
+                </span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -86,9 +96,11 @@
 
                   <!-- Start Social -->
                   <ul class="header-social custom-list">
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                    <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                    <li><a href="https://www.instagram.com/lerambouillet/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=+13104969395"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="https://www.facebook.com/leramb0uillet/"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/lerambouillet/about/"><i class="fab fa-linkedin"></i></a></li>
+                    <!-- <li><a href="#"><i class="far fa-envelope"></i></a></li> -->
                   </ul> 
                   <!-- End Social -->
 
@@ -156,26 +168,20 @@
                         <a href="index3.html" class="active">Home</a>
                       </li>
                       <li>
-                        <a href="fleet_list.html">Our fleet</a>
+                        <a href="about.html">About</a>
                       </li>
-                      <li><a href="drivers.html">Drivers</a></li>
                       <li>
-                        <a href="locations.html">Locations</a>
+                        <a href="fleet_list.html">Service</a>
                       </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
+                      <li>
+                        <a href="contact1.html">Contact</a>
+                      </li>
+                    <li><a href="request.html">Request</a></li>
                     <li>
-                      <a href="about.html">About</a>
-                    </li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <!-- <li class="has-submenu">
-                      <a href="news.html">News</a>
-                      <ul class="sub-menu custom-list">
-                        <li><a href="single_post.html">Single New Post</a></li>
-                      </ul>
-                    </li> -->
-                    <li>
-                      <a href="contact1.html">Contact</a>
+                      <i class="fa fa-phone"></i>
+                      <a href="tel:+18555372626">(855) 537-2626</a>
                     </li>
                   </ul>
                   </nav>
@@ -205,13 +211,29 @@
             <!-- Start Banner-Search -->
             <div class="banner-search">
               <form class="default-form">
-                <span class="heading">Private Jet Charter</span>
-                <span class="point-a select-box">
+                <span class="heading">Make a quick Request</span>
+                <span class="service-type select-box">
+                  <select name="point b" data-placeholder="Type of service">
+                   <option>Type of Service</option>
+                   <option value="1">Concierge Service</option>
+                    <option value="2">Private Jet Service</option>
+                    <option value="3">Travel Management</option>
+                    <option value="4">Event Management</option>
+                    <option value="5">Yacht/Watercraft Services</option>
+                    <option value="6">VIP Shopping</option>
+                    <option value="7">Estate/Property Consultation</option>
+                    <option value="8">Membership Inquiries</option>
+                    <option value="9">Tickets & Events</option>
+                    <option value="10">Other</option>
+                 </select>
+               </span>
+                <!-- <span class="point-a select-box">
                    <select name="point b" data-placeholder="Point A">
                     <option>Point A</option>
-                    <option value="1">Point B</option>
-                    <option value="2">Point C</option>
-                    <option value="3">Point D</option>
+                    <option value="1">Concierge Service</option>
+                    <option value="2">Private Jet Service</option>
+                    <option value="3">Travel Management</option>
+                    <option value="4">Event Management</option>
                   </select>
                 </span>
                 <span class="point-b select-box">
@@ -221,17 +243,17 @@
                     <option value="2">Point D</option>
                     <option value="3">Point E</option>
                   </select>
-                </span>
+                </span> -->
                 <span class="departure-input calendar">
-                  <input type="text" placeholder="Departure">
+                  <input type="text" placeholder="Date of Service">
                   <i class="fa fa-calendar"></i>
                 </span>
-                <span class="arrival-input calendar">
+                <!-- <span class="arrival-input calendar">
                   <input type="text" placeholder="Arrival">
                   <i class="fa fa-calendar"></i>
-                </span>
+                </span> -->
                 <span class="people select-box">
-                  <select name="people" data-placeholder="People">
+                  <select name="people" data-placeholder="Persons">
                     <option>People</option>
                     <option value="1">2</option>
                     <option value="2">3</option>
@@ -240,7 +262,6 @@
                 </span>
                 <span class="submit-btn">
                   <button class="btn light">Book Now</button>
-                  <a href="#">Advanced Search</a>
                 </span>
               </form>
             </div>
@@ -260,12 +281,15 @@
           <!-- Start Header-Preamble -->
           <div class="header-preamble clearfix">
             <div class="logo">
-              <img src="img/logo-preamble.png" alt="">
+              <img src="img/log.webp" alt="">
             </div>
             <div class="content css-table">
               <div class="css-table-cell">
-                <h3>Our Services</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam.</p>
+                <h3 id="home-service">INDULGE IN A LIFE OF FULFILLMENT</h3>
+                <p id="caption">Your thirst for adventure cannot be quenched by the mundane. You're after something intimately personal - a voyage that frees you to explore without limits; a tailor-made experience curated to your every desire.  </p>
+                <div>
+                  <a href="contact1.html" class="btn dark">Apply for Membership</a>
+                </div>
               </div>
             </div>
           </div>
@@ -275,20 +299,28 @@
           <div class="col-lg-4 col-md-4 tabs-navigation">
             <ul class="custom-list tab-title-list">
               <li data-href="#yacht">
-                <h5>Yachts</h5>
-                <p>Sailing the seas of luxury</p>
+                <h5>Travel with Grace</h5>
+                <!-- <p>Sailing the seas of luxury</p> -->
               </li>
               <li data-href="#fleet">
-                <h5>Our Fleet</h5>
-                <p>Modern. Safe. Luxurious.</p>
+                <h5>Bite into Opulence</h5>
+                <!-- <p>Modern. Safe. Luxurious.</p> -->
               </li>
               <li data-href="#drivers">
-                <h5>Drivers On Call</h5>
-                <p>Experience & Class</p>
+                <h5>Real Estate</h5>
+                <!-- <p>Experience & Class</p> -->
               </li>
               <li data-href="#ourlocs">
-                <h5>Our Locations</h5>
-                <p>We Are Available</p>
+                <h5>Commemorate your Journey</h5>
+                <!-- <p>We Are Available</p> -->
+              </li>
+              <li data-href="#wine-tasting">
+                <h5>Prestigious wine-tasting</h5>
+                <!-- <p>We Are Available</p> -->
+              </li>
+              <li data-href="#event">
+                <h5>Private & Exclusive Events</h5>
+                <!-- <p>We Are Available</p> -->
               </li>
             </ul>
           </div>
@@ -301,44 +333,81 @@
             <ul class="custom-list tab-content-list">
 
               <!-- Start Yacht -->
-              <li id="yacht" data-bgimage="img/supertabs4.png">
-                <div class="heading">
-                  <h5>Yachts</h5>
-                  <p>Sailing the seas of luxury</p>
+              <li id="yacht" data-bgimage="img/img1.webp">
+                <div class="opac">
+                  <div class="heading">
+                    <h5>Travel With Grace</h5>
+                    <!-- <p>Sailing the seas of luxury</p> -->
+                  </div>
+                  <cite>Traverse the globe without limits. We’ll take on the hassle of planning lavish flight, sea, and ground accommodations that spare no comfort.</cite>  
+
                 </div>
-                <cite>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac.</cite>  
               </li>
               <!-- End Yacht -->
 
               <!-- Start Fleet -->
-              <li id="fleet" data-bgimage="img/supertabs3.png">
-                <div class="heading">
-                  <h5>Our Fleet</h5>
-                  <p>Modern. Safe. Luxurious.</p>
+              <li id="fleet" data-bgimage="img/food.jpg">
+                <div class="opac">
+                  <div class="heading">
+                    <h5>Bite into Opulence</h5>
+                    <!-- <p>Modern. Safe. Luxurious.</p> -->
+                  </div>
+                  <cite>Experience a variety of global tastes and textures. From three-star Michelin restaurants to private rooftop wine tastings, we craft your culinary journey with the precision of local expertise.</cite>  
+
                 </div>
-                <cite>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac.</cite>  
               </li>
               <!-- End Fleet -->
 
               <!-- Start Drivers -->
-              <li id="drivers" data-bgimage="img/supertabs2.png">
-                <div class="heading">
-                  <h5>Drivers On Call</h5>
-                  <p>Experience & Class</p>
+              <li id="drivers" data-bgimage="img/img2.webp">
+                <div class="opac">
+                  <div class="heading">
+                    <h5>Real Estate</h5>
+                    <!-- <p>Experience & Class</p> -->
+                  </div>
+                  <cite>Global property masters with access to off-showcase properties and master promoting abilities. Regardless of whether the longing is to purchase, sell or lease a five-star living arrangement, our specialist will locate the ideal property to suit each way of life and speculation objective.</cite>  
                 </div>
-                <cite>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac.</cite>  
               </li>
               <!-- End Drivers -->
 
               <!-- Start Ourlocs -->
-              <li id="ourlocs" data-bgimage="img/supertabs1.png">
-                <div class="heading">
-                  <h5>Our Locations</h5>
-                  <p>We Are Available</p>
+              <li id="ourlocs" data-bgimage="img/shopping.jpg">
+                <div class="opac">
+                  <div class="heading">
+                    <h5>Commemorate your Journey</h5>
+                    <!-- <p>We Are Available</p> -->
+                  </div>
+                  <cite>Embark on a personalized outing to find meaningful gifts and mementos. Your dedicated concierge team will map out the shopping expedition tailored to your tastes.</cite>    
+
                 </div>
-                <cite>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac.</cite>    
               </li>          
               <!-- End Ourlocs -->
+
+              <!-- Start Wine -->
+              <li id="wine-tasting" data-bgimage="img/wine.jpg">
+                <div class="opac">
+                  <div class="heading">
+                    <h5>Prestigious wine-tasting</h5>
+                    <!-- <p>We Are Available</p> -->
+                  </div>
+                  <cite>Our bespoke schedules are arranged around you and your inclinations, to make a private interesting visit for your gathering. We can organize wine visits to goals you wish to visit, when you wish to visit. Different exercises can be incorporated, for example, cookery classes, truffle chases, golf, culture, stream cruising, gallery visits or olive oil tastings.</cite>    
+
+                </div>
+              </li>          
+              <!-- End Wine -->
+
+              <!-- Start Events -->
+              <li id="event" data-bgimage="img/event.jpg">
+                <div class="opac">
+                  <div class="heading">
+                    <h5>Private & Exclusive Event</h5>
+                    <!-- <p>We Are Available</p> -->
+                  </div>
+                  <cite>We produce amazing gatherings and festivities for the world's most perceiving crowd. Prestigious for making unique encounters in energizing looked for after areas everywhere throughout the world, from close get-togethers to luxurious festivals, we have gained notoriety for generation greatness, exactness consideration and making recollections.</cite>    
+
+                </div>
+              </li>          
+              <!-- End Events -->
 
             </ul>
           </div>
@@ -349,227 +418,118 @@
     </section>
     <!-- End Supertabs -->
 
-    <!-- Start About -->
-    <section class="about bg-grey">
+    <!-- Start News -->
+    <section class="news">
       <div class="container">
         <div class="row">
+          <!-- Start Preamble -->
+          <div class="col-lg-12 destination">
+            <h5>Your Destination Awaits</h5>
+          </div>
+          <!-- End Preamble -->
+          <!-- Start News-Posts -->
+          <div class="col-lg-8 col-md-8">
+            <div class="news-posts">
+              <div class="post row">
+                <div class="col-lg-5 col-sm-5 thumb">
+                  <img src="img/china.jpg" alt="">
+                </div>
+                <div class="col-lg-7 col-sm-7 post-content">
+                  <header class="post-header">
+                    <h5><a href="#">Unearth Antiquity in China</a></h5>
+                  </header>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus.</p>
+                </div>
+              </div>
+
+              <div class="post row">
+                <div class="col-lg-5 col-sm-5 thumb">
+                  <img src="img/safari.jpg" alt="">
+                </div>
+                <div class="col-lg-7 col-sm-7 post-content">
+                  <header class="post-header">
+                    <h5><a href="#">Explore the Plains of Africa</a></h5>
+                  </header>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus.</p>
+                </div>
+              </div>
+
+              <div class="post row">
+                <div class="col-lg-5 col-sm-5 thumb">
+                  <img src="img/yoga.jpg" alt="">
+                </div>
+                <div class="col-lg-7 col-sm-7 post-content">
+                  <header class="post-header">
+                    <h5><a href="#">Connect with yourself in Bali</a></h5>
+                  </header>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus.</p>
+                </div>
+              </div>
+
+            </div>
             
-          <!-- Start Preamble -->
-          <div class="col-lg-12 preamble">
-            <h3>Our Team</h3>
-            <img src="img/divisor.png" alt="" class="divisor">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est.</p>
           </div>
-          <!-- End Preamble -->
-          
-          <!-- Start Team -->
-          <div class="team">
-            <div class="col-lg-4 col-md-4 member text-center">
-              <div class="member-inner">
-                <img src="img/member.png" alt="">
-                  <ul class="custom-list social member-social">
-                    <li>
-                      <a href="#"><i class="fa fa-facebook-square"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-twitter-square"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-linkedin-square"></i></a>
-                    </li>
-                  </ul>
-              </div>
-              <h5>John Doe</h5>
-              <span>Founder</span>
-              <p>Lorem ipsum dolor sit amet, consect adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed.</p>
-            </div>
-            <div class="col-lg-4 col-md-4 member text-center">
-              <div class="member-inner">
-                <img src="img/member2.png" alt="">
-                  <ul class="custom-list social member-social">
-                    <li>
-                      <a href="#"><i class="fa fa-facebook-square"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-twitter-square"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-linkedin-square"></i></a>
-                    </li>
-                  </ul>
-              </div>
-              <h5>William Blake</h5>
-              <span>Partner</span>
-              <p>Lorem ipsum dolor sit amet, consect adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed.</p>
-            </div>
-            <div class="col-lg-4 col-md-4 member text-center">
-              <div class="member-inner">
-                <img src="img/member3.png" alt="">
-                  <ul class="custom-list member-social">
-                    <li>
-                      <a href="#"><i class="fa fa-facebook-square"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-twitter-square"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-linkedin-square"></i></a>
-                    </li>
-                  </ul>
-              </div>
-              <h5>Charles Smoke</h5>
-              <span>Customer Care</span>
-              <p>Lorem ipsum dolor sit amet, consect adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed.</p>
-            </div>
-          </div>
-          <!-- End Team -->
+          <!-- End News-Posts -->
 
+          <!-- Start Sidebar -->
+          <div class="col-lg-4 col-md-4">
+            <div class="sidebar">
+              <div class="post row">
+                <div class="col-lg-4 col-sm-4 thumb">
+                  <img src="img/chauff.webp" alt="">
+                </div>
+                <div class="col-lg-8 col-sm-8 post-content">
+                  <header class="post-header">
+                    <h5><a href="#">Your Personal Chauffeur</a></h5>
+                  </header>
+                  <p>Fall into deep relaxation between destinations.</p>
+                </div>
+              </div>
+
+              <div class="post row">
+                <div class="col-lg-4 col-sm-4 thumb">
+                  <img src="img/fly.webp" alt="">
+                </div>
+                <div class="col-lg-8 col-sm-8 post-content">
+                  <header class="post-header">
+                    <h5><a href="#">On-Demand Air Travel</a></h5>
+                  </header>
+                  <p>Tour the world in comfort on a whim.</p>
+                </div>
+              </div>
+
+              <div class="post row">
+                <div class="col-lg-4 col-sm-4 thumb">
+                  <img src="img/crowd.webp" alt="">
+                </div>
+                <div class="col-lg-8 col-sm-8 post-content">
+                  <header class="post-header">
+                    <h5><a href="#">VIP Access</a></h5>
+                  </header>
+                  <p>Gain exclusive invites to parties and events reserved for elite guests.</p>
+                </div>
+              </div>
+
+              <div class="post row">
+                <div class="col-lg-4 col-sm-4 thumb">
+                  <img src="img/red.webp" alt="">
+                </div>
+                <div class="col-lg-8 col-sm-8 post-content">
+                  <header class="post-header">
+                    <h5><a href="#">Red Carpet Ready</a></h5>
+                  </header>
+                  <p>Attend private galas and screenings amongst influential celebrities and moguls.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Sidebar -->
         </div>
       </div>
     </section>
-    <!-- End About -->
-
-    <!-- Start Pricing -->
-    <section class="pricing">
-      <div class="container">
-        <div class="row">
-          
-          <!-- Start Package -->
-          <div class="package col-lg-3 col-sm-6">
-            <div class="package-inner">
-              <div class="package-value">
-                <span class="package-unit">$</span>
-                <span class="package-cost">899</span>
-                <span class="package-per">monthly</span>
-              </div>
-              <div class="package-label"><h5>Silver</h5></div>
-            </div>
-            <div class="package-include">
-              <h5>Package Include</h5>
-              <ul class="custom-list">
-                <li>3 Car Transfers</li>
-                <li>1 Limmo/Luxury Rental</li>
-                <li>No Private Charters</li>
-                <li>No Yacht</li>
-              </ul>
-            </div>
-            <a href="#" class="btn dark">Sign Up Now</a>
-          </div>
-          <!-- End Package -->
-          
-          <!-- Start Package -->
-          <div class="package col-lg-3 col-sm-6">
-            <div class="package-inner">
-              <div class="package-value">
-                <span class="package-unit">$</span>
-                <span class="package-cost">1299</span>
-                <span class="package-per">monthly</span>
-              </div>
-              <div class="package-label"><h5>Gold</h5></div>
-            </div>
-            <div class="package-include">
-              <h5>Package Include</h5>
-              <ul class="custom-list">
-                <li>3 Car Transfers</li>
-                <li>1 Limmo/Luxury Rental</li>
-                <li>No Private Charters</li>
-                <li>No Yacht</li>
-              </ul>
-            </div>
-            <a href="#" class="btn dark">Sign Up Now</a>
-          </div>
-          <!-- End Package -->
-          
-          <!-- Start Package -->
-          <div class="package col-lg-3 col-sm-6">
-            <div class="package-inner">
-              <div class="package-value">
-                <span class="package-unit">$</span>
-                <span class="package-cost">2099</span>
-                <span class="package-per">monthly</span>
-              </div>
-              <div class="package-label"><h5>Platinium</h5></div>
-            </div>
-            <div class="package-include">
-              <h5>Package Include</h5>
-              <ul class="custom-list">
-                <li>3 Car Transfers</li>
-                <li>1 Limmo/Luxury Rental</li>
-                <li>No Private Charters</li>
-                <li>No Yacht</li>
-              </ul>
-            </div>
-            <a href="#" class="btn dark">Sign Up Now</a>
-          </div>
-          <!-- End Package -->
-          
-          <!-- Start Package -->
-          <div class="package col-lg-3 col-sm-6">
-            <div class="package-inner">
-              <div class="package-value">
-                <span class="package-unit">$</span>
-                <span class="package-cost">9899</span>
-                <span class="package-per">monthly</span>
-              </div>
-              <div class="package-label"><h5>Royal</h5></div>
-            </div>
-            <div class="package-include">
-              <h5>Package Include</h5>
-              <ul class="custom-list">
-                <li>3 Car Transfers</li>
-                <li>1 Limmo/Luxury Rental</li>
-                <li>No Private Charters</li>
-                <li>No Yacht</li>
-              </ul>
-            </div>
-            <a href="#" class="btn dark">Sign Up Now</a>
-          </div>
-          <!-- End Package -->
-
-        </div>
-      </div>
-    </section>
-    <!-- End Pricing -->
-
-    <!-- Start Partners -->
-    <section class="partners">
-      <div class="container">
-        <div class="row">
-
-          <!-- Start Preamble -->
-          <div class="col-lg-12 preamble">
-            <h5>Our Partners</h5>
-          </div>
-          <!-- End Preamble -->
-
-          <!-- Start Partner -->
-          <div class="col-lg-3 col-md-3 col-sm-3 company">
-            <a href="#"><img src="img/company1.png" alt=""></a>
-          </div>
-          <!-- End Partner -->
-
-          <!-- Start Partner -->
-          <div class="col-lg-3 col-md-3 col-sm-3 company">
-            <a href="#"><img src="img/company2.png" alt=""></a>
-          </div>
-          <!-- End Partner -->
-
-          <!-- Start Partner -->
-          <div class="col-lg-3 col-md-3 col-sm-3 company">
-            <a href="#"><img src="img/company3.png" alt=""></a>
-          </div>
-          <!-- End Partner -->
-
-          <!-- Start Partner -->
-          <div class="col-lg-3 col-md-3 col-sm-3 company">
-            <a href="#"><img src="img/company4.png" alt=""></a>
-          </div>
-          <!-- End Partner -->
-
-        </div>
-      </div>
-    </section>
-    <!-- End Partners -->
+    <!-- End News -->
+    
+  
 
     <!-- Start Footer -->
     <footer id="footer">
@@ -577,7 +537,7 @@
 
           <!-- Start Preamble -->
           <div class="col-lg-12 preamble">
-            <img src="img/footer-logo.png" alt="">
+            <img src="img/log.webp" alt="">
           </div>
           <!-- End Preamble -->
 
@@ -588,45 +548,47 @@
               <!-- Start Widget-About -->
               <div class="col-lg-4 col-md-4 widget widget-about">
                 <h5>About Us</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Etiam sit amet lectus quis est congue mollis.</p>
+                <p>Connect with the transformative journey of a lifetime. We climb to great heights to enrich your jet-set lifestyle with unrivaled culture and luxury. Your vision of vacation excellence is our masterpiece to deliver.</p>
+                <!-- Start Social -->
+                <ul class="header-social custom-list">
+                  <li><a href="https://www.instagram.com/lerambouillet/"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="https://api.whatsapp.com/send?phone=+13104969395"><i class="fab fa-whatsapp"></i></a></li>
+                  <li><a href="https://www.facebook.com/leramb0uillet/"><i class="fab fa-facebook"></i></a></li>
+                  <li><a href="https://www.linkedin.com/company/lerambouillet/about/"><i class="fab fa-linkedin"></i></a></li>
+                  <!-- <li><a href="#"><i class="far fa-envelope"></i></a></li> -->
+                </ul> 
+                <!-- End Social -->
               </div>
               <!-- End Widget-About -->
 
               <!-- Start Widget-News -->
               <div class="col-lg-4 col-md-4 widget widget-news">
-                <h5>Latest News</h5>
+                <h5>Navigation</h5>
                 <ul class="custom-list">
-                  <li><a href="#">Lorem ipsum dolor</a></li>
-                  <li><a href="#">Proin nibh augue suscipit scelerisque</a></li>
-                  <li><a href="#">Etiam pellentesque aliquet tellus</a></li>
+                  <li><a href="index3.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="service.html">Service</a></li>
+                  <li><a href="privacy.html">Privacy</a></li>
+                  <li><a href="request.html">Request</a></li>
                 </ul>
               </div>
               <!-- End Widget-News -->
 
               <!-- Start Widget-Newsletter -->
               <div class="col-lg-4 col-md-4 widget widget-newsletter">
-                <h5>Newsletter</h5>
-                <form class="default-form">
-                  <input type="text" name="newsletter" placeholder="Your Email Here">
-                  <button class="btn light">Sign Up</button>
-                </form>
+                <h5>ATLANTA</h5>
+                <p>3340 Peachtree Road NE Ste 1010</p>
+                <p>Atlanta, GA 30326</p>
+                <p>Tel: <a href="tel:+14702421783">+1 470 242-1783</a></p>
               </div>
               <!-- End Widget-Newsletter -->
 
               <!-- Start Widget-Social -->
               <div class="col-lg-4 col-md-4 widget widget-social">
-                <h5>Lets Stay in Touch</h5>
-                <ul class="custom-list social">
-                  <li>
-                    <a href="#"><i class="fa fa-facebook-square"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-twitter-square"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-linkedin-square"></i></a>
-                  </li>
-                </ul>
+                <h5>LOS ANGELES</h5>
+                <p>750 N San Vincente Blvd Ste 800 W.</p>
+                <p>West Hollywood, CA 90069</p>
+                <p>Tel: <a href="tel:+13104969395"></a> +1 310 496-9395</p>
               </div>
               <!-- End Widget-Social -->
             </div>
@@ -639,7 +601,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              <p>Copyright 2014 © Concierge. All rights reserved. Powered by <a href="#">UOUapps</a></p>
+              <p>Copyright 2021 © Le Rambouillet. All rights reserved. Powered by <a href="https://www.linkedin.com/mwlite/in/alex-okoro-655000136">Alex Okoro</a></p>
             </div>
           </div>
         </div>

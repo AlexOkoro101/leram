@@ -1011,9 +1011,9 @@ button:hover {
   outline: none;
 }
 
-#toggle:after { content:'\f0c9'; }
+#toggle:after { content:'\f0c9'; font-family: 'Font Awesome 5 Free'; font-weight: 600;}
 
-#toggle.toggled:after { content:'\f077' }
+#toggle.toggled:after { content:'\f077'; font-family: 'Font Awesome 5 Free'; font-weight: 600;}
 
 .enable-fixed-header #toggle { position: fixed; }
 
@@ -1076,14 +1076,14 @@ button:hover {
 
 #header.triangle.header-title { height: 240px; }
 
-#header.triangle .header-title-inner { top: 110px; }
+#header.triangle .header-title-inner { top: 110px;}
 
 /* -------------------------------------------------------------------------
     HEADER CLASSIC
 ------------------------------------------------------------------------- */
-#header.classic .header-logo { top: 74px; }
+#header.classic .header-logo { top: 37px; }
 
-#header.classic .header-nav ul li { line-height: 140px; }
+#header.classic .header-nav ul li { line-height: 100px; }
 
 #header.classic .banner-search-inner { margin-top: 180px; }
 
@@ -1241,7 +1241,7 @@ button:hover {
 #header .header-tool-bar button:hover,
 #header .header-tool-bar button.hover { color: #fff; }
 
-#header .header-tool-bar i {
+#header .header-tool-bar i, .nav li i {
   margin-right: 8px;
   font-size: 12px;
   color: #fff;
@@ -1659,6 +1659,10 @@ button:hover {
   padding: 20px 0;
   max-width: 120px;
 }
+.banner-search .service-type { 
+  padding: 20px 0;
+  max-width: 160px;
+}
 
 .banner-search .point-b { 
   padding: 20px 0 20px 3px;
@@ -1670,7 +1674,7 @@ button:hover {
 .banner-search .departure-input {
   padding: 20px 0 20px 25px;
   margin-left: 20px;
-  max-width: 151px;
+  max-width: 185px;
   border-left: 1px solid #3b4553;
 }
 
@@ -1682,7 +1686,7 @@ button:hover {
 .banner-search .people {
   padding: 20px 0 20px 25px;
   margin-left: 20px;
-  max-width: 131px;
+  max-width: 138px;
   border-left: 1px solid #3b4553;
 }
 
@@ -2879,7 +2883,8 @@ button:hover {
 /* -------------------------------------------------------------------------
     SIDEBAR
 ------------------------------------------------------------------------- */
-.news .sidebar { margin-left: 20px; }
+.news .sidebar { margin-left: 20px;background-color: #1e2e42; padding: 30px 10px 10px 10px;}
+
 
 .widget .search-form { position: relative; }
 
@@ -3505,7 +3510,8 @@ button:hover {
 
 #footer .widget-news li a:before {
   margin-right: 10px;
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
   font-size: 14px;
   color: #c8cbd0;
   content: "\f0da";
@@ -3567,7 +3573,6 @@ button:hover {
 
 #footer .widget-social h5 {
   padding-bottom: 10px;  
-  float: left;
   line-height: 26px;
 }
 
@@ -3619,3 +3624,113 @@ button:hover {
 }
 
 #footer .footer-copyrights a:hover { text-decoration: underline; }
+
+/* -----------------------------------------------------------------
+    NEW
+------------------------------------------------------------------*/
+p#caption {
+  margin-bottom: 10px;
+}    
+#home-service {
+  margin-bottom: 5px;
+}
+.sidebar .post .post-header h5 {
+  padding-right: 0;
+}
+.sidebar .post .post-header h5 > a {
+  color: #fff;
+  font-size: 15px;
+}
+.sidebar p {
+  font-size: 12px;
+  line-height: 20px;
+  color: #aaa;
+}
+.sidebar .post {
+  margin-bottom: 40px;
+}
+.post-header-text {
+  margin: 0 0 40px 0;
+}
+.destination h5 {
+  padding-bottom: 50px;
+  margin: 0;
+  text-align: center;
+  font-size: 2.25em;
+}
+
+.destination h5:before {
+  position: relative;
+  bottom: 5px;
+  margin-right: 20px;
+  content: url(../img/divisor-left.png);
+}
+
+.destination h5:after {
+  position: relative;
+  bottom: 5px;
+  margin-left: 20px;
+  content: url(../img/divisor-right.png);
+}
+.news {
+  background: #f5f5f5;
+}
+.widget-about li {
+  display: inline;
+}
+.footer-content .widget-about ul {
+  margin-top: 10px;
+}
+.footer-content .widget-about li {
+  margin-right: 10px;
+}
+.footer-content .widget-about li i {
+  font-size: 20px;
+}
+#myvideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+.ban .content {
+  position: absolute;
+  bottom: 20%;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.tabs-content .tab-content-list li cite {
+  color: #fff;
+}
+#fleet h5, #yacht h5, #drivers h5, #ourlocs h5, #wine-tasting h5, #event h5 {
+  color: #fff;
+}
+#fleet .heading, #yacht .heading, #drivers .heading, #ourlocs .heading, #wine-tasting .heading, #event .heading {
+  border-color: #fff;
+}
+.opac {
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 720px) {
+  #myvideo {
+    top: 0;
+    bottom: 0;
+    width: auto;
+    height: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .ban .content {
+    bottom: 47%;
+  }
+}
+#here {
+  font-size: 100px;
+  text-transform: uppercase;
+}
