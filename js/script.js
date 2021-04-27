@@ -1071,4 +1071,40 @@ $(document).ready(function(){
 		}
 	}
   });
+
+  //// SMOTH SCROLL
+  $.scrollIt({
+      topOffset: -80
+  });
+
+  //// SCROLL SPY TRIGGER
+  $('body').scrollspy({
+    target: '.navbar-collapse',
+    offset: 195
+});
+
+//// ISOTOPE TRIGGER
+var $grid = $('.work-content').isotope({
+  itemSelector: '.work-item',
+  stagger: 30
+});
+$(window).on('load', function(){ $grid.isotope('layout') }); 
+$('.filter-work').on( 'click', '.button', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+});
+// change is-checked class on buttons
+$('.button-group').each( function( i, buttonGroup ) {
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'a', function() {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    $( this ).addClass('is-checked');
+  });
+});
+
+//// MAGNIFIC POPUP TRIGGER
+$('.modal-image').magnificPopup({
+  type: 'image'
+});
+
 });
